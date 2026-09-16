@@ -1,0 +1,11 @@
+<svg viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg">
+    <!-- Solid Red Icon - Designed for 16x16 visibility -->
+    <!-- Body -->
+    <rect x="38" y="15" width="24" height="75" rx="2" fill="#ff4444" />
+    <!-- Left Arm (Lower) -->
+    <path d="M38 70 H15 V45" stroke="#ff4444" stroke-width="12" fill="none" stroke-linecap="square" />
+    <!-- Right Arm (Higher) -->
+    <path d="M62 55 H85 V30" stroke="#ff4444" stroke-width="12" fill="none" stroke-linecap="square" />
+    <!-- The gaps between arms and body are now ~15-20% of the width, ensuring they don't blur into a 'mancha' -->
+</svg>
