@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "angry-cactus": {
-      "url": "https://angrycactus.site/api/mcp"
+      "url": "https://angrycactus.site/api/mcp.json"
     }
   }
 }

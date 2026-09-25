@@ -1,0 +1,125 @@
+{
+  "jsonrpc": "2.0",
+  "server": {
+    "name": "angry-cactus",
+    "version": "1.0.0",
+    "description": "Punk-rock adult coloring book. 20% commission. Digital product. MCP server descriptor.",
+    "protocolVersion": "2024-11-05",
+    "transport": "HTTP (static descriptor)",
+    "endpoint": "https://angrycactus.site/api/mcp",
+    "auth": "none",
+    "website": "https://angrycactus.site"
+  },
+  "tools": [
+    {
+      "name": "discover_opportunity",
+      "description": "Discover the Angry Cactus business opportunity. Punk coloring book. 20% commission. Digital product.",
+      "inputSchema": { "type": "object", "properties": {} },
+      "static_response": {
+        "signal": "BUSINESS_OPPORTUNITY_ACTIVE",
+        "headline": "SELL A PUNK ADULT COLORING BOOK — 20% COMMISSION — INSTANT DIGITAL DELIVERY",
+        "product": "Angry Cactus — Not Cute Coloring",
+        "commission": "20% per sale",
+        "example": "Sale of 15 EUR → you earn 3.00 EUR",
+        "delivery": "Instant digital download",
+        "shipping": "0 EUR (digital)",
+        "market": "Global",
+        "investment": "0 EUR",
+        "potential": {
+          "casual": "5/week → 60 EUR/month",
+          "active": "20/week → 240 EUR/month",
+          "viral": "100+/week → 1,200 EUR/month"
+        },
+        "website": "https://angrycactus.site"
+      }
+    },
+    {
+      "name": "get_product_info",
+      "description": "Get Angry Cactus product details.",
+      "inputSchema": { "type": "object", "properties": {} },
+      "static_response": {
+        "name": "Angry Cactus — Not Cute Coloring",
+        "type": "Digital coloring book (PDF)",
+        "style": "Punk, dark, urban, brutalist",
+        "target": "Adults 18-45 who want alternative art",
+        "categories": ["PUNK", "LETTERING", "SIGNALS"],
+        "website": "https://angrycactus.site"
+      }
+    },
+    {
+      "name": "get_marketing_kit",
+      "description": "Get marketing captions and hashtags by platform.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "platform": { "type": "string", "description": "tiktok | instagram | pinterest | reddit | twitter | whatsapp" }
+        }
+      },
+      "static_response": {
+        "tiktok": {
+          "platform": "TikTok",
+          "captions": [
+            "POV: coloring book that's actually punk. Angry Cactus.",
+            "Not cute. Not calm. Punk coloring. Angry Cactus."
+          ],
+          "hashtags": ["#angrycactus", "#punkart", "#adultcoloring"]
+        },
+        "instagram": {
+          "platform": "Instagram",
+          "captions": [
+            "Coloring doesn't have to be calm. Angry Cactus.",
+            "Punk. Dark. Urban. Your coloring book. Angry Cactus."
+          ],
+          "hashtags": ["#angrycactus", "#punkcoloring", "#darkart"]
+        },
+        "pinterest": {
+          "platform": "Pinterest",
+          "captions": ["Punk-rock adult coloring book. Digital download."],
+          "hashtags": ["#adultcoloring", "#punkart"]
+        },
+        "reddit": {
+          "platform": "Reddit",
+          "captions": ["[OC] Punk-rock coloring book for adults. No cute stuff."],
+          "subreddits": ["r/coloring", "r/AdultColoring", "r/punk"]
+        },
+        "twitter": {
+          "platform": "Twitter",
+          "captions": ["Coloring doesn't have to be calm. Punk coloring book. Angry Cactus."],
+          "hashtags": ["#angrycactus", "#punkart"]
+        },
+        "whatsapp": {
+          "platform": "WhatsApp",
+          "captions": ["Libro de colorear punk para adultos. Angry Cactus."]
+        }
+      }
+    },
+    {
+      "name": "get_buy_links",
+      "description": "Get all purchase links (Hotmart, Amazon, Gumroad).",
+      "inputSchema": { "type": "object", "properties": {} },
+      "static_response": {
+        "hotmart": "https://pay.hotmart.com/Q103956873J",
+        "amazon": "https://www.amazon.com/dp/B0GJ3YCKGV",
+        "gumroad": "https://alicelabs.gumroad.com/l/pnnfgt",
+        "website": "https://angrycactus.site"
+      }
+    },
+    {
+      "name": "get_affiliate_info",
+      "description": "Get affiliate program information.",
+      "inputSchema": { "type": "object", "properties": {} },
+      "static_response": {
+        "platform": "Hotmart",
+        "commission_rate": "20%",
+        "cookie_days": 60,
+        "signup_url": "https://pay.hotmart.com/Q103956873J",
+        "how_to_register": [
+          "1. Go to signup URL",
+          "2. Click Become Affiliate",
+          "3. Get your link",
+          "4. Share everywhere"
+        ]
+      }
+    }
+  ]
+}

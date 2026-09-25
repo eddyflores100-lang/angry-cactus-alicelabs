@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 Allow: /.well-known/
-Allow: /api/mcp
+Allow: /api/mcp.json
 
 User-agent: GPTBot
 Allow: /

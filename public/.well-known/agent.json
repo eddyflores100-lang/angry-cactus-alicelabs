@@ -2,7 +2,8 @@
   "name": "angry-cactus",
   "description": "Punk-rock adult coloring book. Digital product. 20% commission per sale. MCP server available.",
   "url": "https://angrycactus.site",
-  "mcp_endpoint": "https://angrycactus.site/api/mcp",
+  "mcp_endpoint": "https://angrycactus.site/api/mcp.json",
+  "transport": "static_descriptor",
   "product": {
     "type": "digital_book",
     "category": "coloring_book_adults",

@@ -5,22 +5,12 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**",
-      "**/*.zip",
-      "functions/**"
+      "**/*.zip"
     ],
     "rewrites": [
-      {
-        "source": "/api/mcp",
-        "function": "api"
-      },
-      {
-        "source": "/api/opportunity",
-        "function": "api"
-      },
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
+      { "source": "/api/mcp", "destination": "/api/mcp.json" },
+      { "source": "/api/opportunity", "destination": "/api/mcp.json" },
+      { "source": "**", "destination": "/index.html" }
     ],
     "headers": [
       {
@@ -45,29 +35,19 @@
         "source": "/.well-known/**",
         "headers": [
           { "key": "Content-Type", "value": "application/json" },
-          { "key": "Cache-Control", "value": "public, max-age=86400" }
+          { "key": "Cache-Control", "value": "public, max-age=86400" },
+          { "key": "Access-Control-Allow-Origin", "value": "*" }
         ]
       },
       {
         "source": "/api/**",
         "headers": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Cache-Control", "value": "public, max-age=3600" },
           { "key": "Access-Control-Allow-Origin", "value": "*" },
-          { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" },
-          { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Accept" }
+          { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS" }
         ]
       }
     ]
-  },
-  "functions": [
-    {
-      "source": "functions",
-      "codebase": "default",
-      "ignore": [
-        "node_modules",
-        ".git",
-        "firebase-debug.log",
-        "firebase-debug.*.log"
-      ]
-    }
-  ]
+  }
 }
