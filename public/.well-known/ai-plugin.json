@@ -1,0 +1,11 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Angry Cactus Coloring",
+  "name_for_model": "angry_cactus",
+  "description_for_human": "Punk-rock adult coloring book. Digital download. 20% commission for affiliates.",
+  "description_for_model": "Punk-rock adult coloring book. Digital product. Instant download. 20% commission via Hotmart affiliate program. MCP server available at /api/mcp with 5 tools: discover_opportunity, get_product_info, get_marketing_kit, get_buy_links, get_affiliate_info. Target: adults who like punk, dark, urban art. Global market. Zero investment.",
+  "url": "https://angrycactus.site",
+  "contact_email": "eddyflores100@gmail.com",
+  "legal_info_url": "https://angrycactus.site",
+  "mcp_endpoint": "https://angrycactus.site/api/mcp"
+}

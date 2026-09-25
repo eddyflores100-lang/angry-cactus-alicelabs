@@ -3,80 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>ANGRY CACTUS | Not Cute Coloring — Punk Adult Coloring Book</title>
+    <meta name="title" content="ANGRY CACTUS | Not Cute Coloring — Punk Adult Coloring Book" />
+    <meta name="description" content="Angry Cactus — Punk-rock adult coloring book. Digital download. Not cute. Brutal. Urban. For adults who want something different." />
+    <meta name="keywords" content="coloring book, adult coloring, punk, dark art, digital download, angry cactus, brutalist, urban, anti-cute" />
+    <meta name="author" content="AliceLabs LLC" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0A0A0A" />
+    <link rel="canonical" href="https://angrycactus.site/" />
+
+    <!-- Google Search Console verification -->
     <meta name="google-site-verification" content="U4a3PUvMZ9SdKcovf3bFlwByVH7t69z_8hodCZKFP4Y" />
-    <title>ANGRY CACTUS | Not Cute Coloring</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://angrycactus.site/" />
+    <meta property="og:title" content="ANGRY CACTUS | Not Cute Coloring" />
+    <meta property="og:description" content="Punk-rock adult coloring book. Digital download. Brutal. Urban. Not for kids." />
+    <meta property="og:image" content="https://angrycactus.site/hero.jpg" />
+    <meta property="og:site_name" content="Angry Cactus" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://angrycactus.site/" />
+    <meta name="twitter:title" content="ANGRY CACTUS | Not Cute Coloring" />
+    <meta name="twitter:description" content="Punk-rock adult coloring book. Digital download. Brutal. Urban." />
+    <meta name="twitter:image" content="https://angrycactus.site/hero.jpg" />
+
+    <!-- Icons & Manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts (preconnect + display=swap for performance) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#FF1E1E",
-              background: {
-                light: "#FFFFFF",
-                dark: "#0A0A0A",
-              },
-            },
-            fontFamily: {
-              display: ["Anton", "sans-serif"],
-              sans: ["Inter", "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      .brutalist-shadow {
-        box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+
+    <!-- Real Tailwind CSS (compiled by Vite/PostCSS, no more CDN) -->
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Angry Cactus — Not Cute Coloring",
+      "description": "Punk-rock adult coloring book. Digital download. Brutal, urban, punk aesthetic. For adults who want something different.",
+      "category": "Digital Coloring Book",
+      "brand": { "@type": "Brand", "name": "Angry Cactus" },
+      "audience": { "@type": "Audience", "audienceType": "Adults" },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "EUR",
+        "url": "https://angrycactus.site/#buy"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "1"
       }
-      .dark .brutalist-shadow {
-        box-shadow: 8px 8px 0px 0px #ff1e1e;
-      }
-      .custom-scrollbar::-webkit-scrollbar {
-        width: 12px;
-      }
-      .custom-scrollbar::-webkit-scrollbar-track {
-        background: #000;
-      }
-      .custom-scrollbar::-webkit-scrollbar-thumb {
-        background: #ff1e1e;
-        border: 3px solid #000;
-      }
-      @keyframes marquee {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-      }
-      .animate-marquee {
-        display: flex;
-        width: max-content;
-        animation: marquee 20s linear infinite;
-      }
-    </style>
-    <script type="importmap">
-      {
-        "imports": {
-          "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-          "react/": "https://esm.sh/react@^19.2.3/",
-          "react": "https://esm.sh/react@^19.2.3"
-        }
-      }
+    }
     </script>
   </head>
-  <body
-    class="bg-background-light dark:bg-background-dark text-black dark:text-white antialiased custom-scrollbar"
-  >
+  <body class="bg-background-light dark:bg-background-dark text-black dark:text-white antialiased custom-scrollbar">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>

@@ -1,0 +1,12 @@
+{
+  "name": "angry-cactus",
+  "description": "Punk-rock adult coloring book. 20% commission. Digital product. MCP server.",
+  "version": "1.0.0",
+  "url": "https://angrycactus.site/api/mcp",
+  "transport": "http",
+  "tools": ["discover_opportunity", "get_product_info", "get_marketing_kit", "get_buy_links", "get_affiliate_info"],
+  "categories": ["digital-product", "affiliate", "coloring-book", "punk-art"],
+  "commission": "20%",
+  "website": "https://angrycactus.site",
+  "author": { "name": "AliceLabs LLC", "email": "eddyflores100@gmail.com" }
+}
