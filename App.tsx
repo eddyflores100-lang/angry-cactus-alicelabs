@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './styles.css';
 
+// Firebase Analytics initialization (auto-loads in browser).
+import './src/lib/firebase';
+
 import { Navbar } from './src/components/Navbar';
 import { Hero, WhyThisExists, MobileCTA, WhatYouGet, MarqueeBanner, TryBeforeYouStrike, FinalCTA } from './src/components/sections';
 import { Gallery } from './src/components/Gallery';
