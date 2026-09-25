@@ -1,0 +1,43 @@
+name: Deploy to Firebase Hosting
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies (root)
+        run: npm ci
+
+      - name: Install dependencies (functions)
+        run: npm ci
+        working-directory: functions
+
+      - name: Build site
+        run: npm run build
+
+      - name: Deploy to Firebase Hosting + Functions
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ANGRY_CACTUS_ALICELABS_1 }}
+          projectId: angry-cactus-alicelabs-1
+          channelId: live
+          target: production

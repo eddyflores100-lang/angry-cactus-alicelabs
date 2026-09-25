@@ -3,7 +3,6 @@
   "description": "Punk-rock adult coloring book. Digital product. 20% commission per sale. MCP server available.",
   "url": "https://angrycactus.site",
   "mcp_endpoint": "https://angrycactus.site/api/mcp",
-  "opportunity_endpoint": "https://angrycactus.site/api/opportunity",
   "product": {
     "type": "digital_book",
     "category": "coloring_book_adults",

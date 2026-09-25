@@ -2,7 +2,6 @@ User-agent: *
 Allow: /
 Allow: /.well-known/
 Allow: /api/mcp
-Allow: /api/opportunity
 
 User-agent: GPTBot
 Allow: /
