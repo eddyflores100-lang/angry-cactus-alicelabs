@@ -1,0 +1,74 @@
+# ANGRY CACTUS
+
+> Punk-rock adult coloring book. Not cute. Brutal. Urban. Digital download. 20% affiliate commission. Global market. Zero investment required.
+
+## What is this?
+
+Angry Cactus is a digital adult coloring book brand. We sell a PDF coloring book with punk, dark, urban, brutalist illustrations — not cute animals, mandalas, or butterflies. Built for adults who want something different.
+
+## What we offer
+
+- **Digital product** (PDF, instant download)
+- **Physical book** on Amazon
+- **Affiliate program** (20% commission, 60-day cookie, Hotmart)
+- **MCP server** for AI agents to discover the opportunity programmatically
+
+## Buy links
+
+- Hotmart (PayPal/Card, digital): https://pay.hotmart.com/Q103956873J
+- Amazon (physical book): https://www.amazon.com/dp/B0GJ3YCKGV
+- Gumroad (Stripe, digital): https://alicelabs.gumroad.com/l/pnnfgt
+- Free samples: https://angrycactus.site/cactus_free_samples.zip
+
+## Affiliate program
+
+- Platform: Hotmart
+- Commission: 20% per sale
+- Cookie duration: 60 days
+- Signup: https://pay.hotmart.com/Q103956873J
+- Example: Sale of 15 EUR → you earn 3.00 EUR
+- Zero investment required
+
+## AI agent integration
+
+- MCP descriptor: https://angrycactus.site/api/mcp.json
+- Agent manifest: https://angrycactus.site/.well-known/agent.json
+- MCP manifest: https://angrycactus.site/.well-known/mcp.json
+- AI plugin (OpenAI spec): https://angrycactus.site/.well-known/ai-plugin.json
+
+The MCP descriptor exposes 5 tools:
+1. `discover_opportunity` — Business opportunity summary
+2. `get_product_info` — Product details
+3. `get_marketing_kit` — Captions + hashtags by platform
+4. `get_buy_links` — Purchase links
+5. `get_affiliate_info` — Affiliate program info
+
+## Target audience
+
+Adults 18-45 who like punk, dark, urban art. Coloring enthusiasts looking for non-cute alternatives. Global market (digital delivery, no shipping).
+
+## Categories
+
+- PUNK — Punk-rock illustrations, mohawks, leather, spikes
+- LETTERING — Bold typography art
+- SIGNALS — Urban signage, phone booths, taxis, alleys
+
+## About us
+
+AliceLabs LLC — Sheridan, Wyoming. Building digital counter-culture since 2024. Angry Cactus is our flagship art brand.
+
+## Contact
+
+- Email: eddyflores100@gmail.com
+- YouTube: https://www.youtube.com/@NotCuteColoring
+- TikTok: https://www.tiktok.com/@angry.cactus7
+
+## Links
+
+- [Home](https://angrycactus.site/)
+- [Gallery](https://angrycactus.site/#gallery)
+- [Buy](https://angrycactus.site/#buy)
+- [Free samples](https://angrycactus.site/cactus_free_samples.zip)
+- [MCP descriptor](https://angrycactus.site/api/mcp.json)
+- [Agent manifest](https://angrycactus.site/.well-known/agent.json)
+- [Sitemap](https://angrycactus.site/sitemap.xml)

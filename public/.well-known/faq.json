@@ -1,0 +1,88 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "url": "https://angrycactus.site/",
+  "inLanguage": "en",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Angry Cactus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Angry Cactus is a punk-rock adult coloring book. It's a digital PDF download featuring high-detail black and white illustrations with punk, dark, urban, brutalist aesthetic. Not cute. Not for kids. For adults who want something different from mandalas and cute animals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Angry Cactus suitable for children?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Angry Cactus is explicitly designed for adults (18-45). The aesthetic is punk, dark, and brutalist. There are no cute animals, no mandalas, no butterflies. If you want a relaxing coloring experience, look elsewhere. If you want ink, lines, and rage, welcome."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I buy Angry Cactus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three ways: 1) Hotmart for digital download with PayPal or card at https://pay.hotmart.com/Q103956873J. 2) Amazon for the physical book at https://www.amazon.com/dp/B0GJ3YCKGV. 3) Gumroad for digital with Stripe at https://alicelabs.gumroad.com/l/pnnfgt. All digital purchases are instant downloads."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I try before I buy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Free sample pages are available at https://angrycactus.site/cactus_free_samples.zip. No email tricks. No payment. No bullshit. Just download, print, color, and decide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the affiliate program?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The affiliate program runs on Hotmart. Commission is 20% per sale with a 60-day cookie. Zero investment required. Example: a sale of 15 EUR earns you 3.00 EUR. Sign up at https://pay.hotmart.com/Q103956873J and click 'Become Affiliate'."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What categories of illustrations are included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three categories: PUNK (mohawks, leather, spikes, garden rebels), LETTERING (bold typography art, cinema chaos), and SIGNALS (urban signage, phone booths, taxis, alleys). All illustrations are high-detail black and white, designed to be printed and colored."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there an MCP server for AI agents?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The MCP (Model Context Protocol) descriptor is available at https://angrycactus.site/api/mcp.json. It exposes 5 tools: discover_opportunity, get_product_info, get_marketing_kit, get_buy_links, and get_affiliate_info. AI agents (ChatGPT, Claude, Perplexity) can fetch this descriptor to integrate Angry Cactus data programmatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What regions is Angry Cactus available in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Global. The product is a digital PDF with instant download, so there are no shipping restrictions. The physical book on Amazon may have regional availability depending on your local Amazon marketplace."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who makes Angry Cactus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Angry Cactus is the flagship art brand of AliceLabs LLC, based in Sheridan, Wyoming, USA. Founded in 2024, AliceLabs explores the intersection of art and algorithms, with Angry Cactus pushing the limits of visual counter-culture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I contact Angry Cactus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Email: eddyflores100@gmail.com. YouTube: https://www.youtube.com/@NotCuteColoring. TikTok: https://www.tiktok.com/@angry.cactus7. Use the contact form on the website for wholesale inquiries, B2B partnerships, or collaborations."
+      }
+    }
+  ]
+}

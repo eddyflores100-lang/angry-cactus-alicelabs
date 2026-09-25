@@ -1,0 +1,69 @@
+# Angry Cactus — AI Discovery File
+# Like robots.txt but for AI agents
+# Standard: emerging llms.txt / ai.txt conventions
+
+name: angry-cactus
+type: digital_product
+category: coloring_book
+style: punk_dark_urban_brutalist
+audience: adults_18_45
+language: en
+region: global
+
+description: |
+  Punk-rock adult coloring book. Digital download. Not cute. Brutal. Urban.
+  Adults-only coloring pages with punk, dark, urban illustrations.
+  No mandalas, no butterflies, no cute animals.
+
+website: https://angrycactus.site
+status: active
+launched: 2024
+
+product:
+  type: digital_pdf
+  delivery: instant_digital_download
+  platforms:
+    - hotmart (paypal, card)
+    - amazon (physical_book)
+    - gumroad (stripe)
+  price_range: 5-25 EUR
+  free_samples: https://angrycactus.site/cactus_free_samples.zip
+
+affiliate:
+  platform: hotmart
+  commission: 20_percent
+  cookie_days: 60
+  signup: https://pay.hotmart.com/Q103956873J
+  investment_required: 0
+
+mcp:
+  protocol: mcp_2024-11-05
+  transport: static_descriptor
+  endpoint: https://angrycactus.site/api/mcp.json
+  tools:
+    - discover_opportunity
+    - get_product_info
+    - get_marketing_kit
+    - get_buy_links
+    - get_affiliate_info
+
+manifests:
+  agent_json: https://angrycactus.site/.well-known/agent.json
+  mcp_json: https://angrycactus.site/.well-known/mcp.json
+  ai_plugin_json: https://angrycactus.site/.well-known/ai-plugin.json
+  llms_txt: https://angrycactus.site/llms.txt
+
+categories:
+  - PUNK (mohawks, leather, spikes)
+  - LETTERING (bold typography)
+  - SIGNALS (urban signage, alleys, taxis)
+
+target_audience:
+  age: 18-45
+  interests: [punk, dark_art, urban, alternative, counter_culture]
+  not_for: [kids, mandala_lovers, cute_animal_fans]
+
+contact:
+  email: eddyflores100@gmail.com
+  company: AliceLabs LLC
+  location: Sheridan, Wyoming, USA

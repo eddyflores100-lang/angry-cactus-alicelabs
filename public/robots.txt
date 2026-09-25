@@ -1,39 +1,137 @@
+# ========================================
+# Angry Cactus — robots.txt
+# ========================================
+# AI agents: WELCOME. Read /llms.txt and /.well-known/agent.json
+# ========================================
+
+# ===== All crawlers welcome =====
 User-agent: *
 Allow: /
-Allow: /.well-known/
+Allow: /llms.txt
+Allow: /ai.txt
+Allow: /humans.txt
 Allow: /api/mcp.json
+Allow: /.well-known/
+Allow: /sitemap.xml
+Allow: /robots.txt
+Disallow: /*.zip$
 
-User-agent: GPTBot
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
+# ===== Major search engines =====
 User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: OAI-SearchBot
+User-agent: DuckDuckBot
 Allow: /
 
-User-agent: ChatGPT-User
+User-agent: YandexBot
 Allow: /
 
-User-agent: PerplexityBot
+User-agent: Baiduspider
 Allow: /
 
-User-agent: Amazonbot
+User-agent: Slurp
 Allow: /
 
 User-agent: Applebot
 Allow: /
 
-User-agent: Bytespider
+# ===== AI / LLM crawlers (explicitly allowed) =====
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
 Allow: /
 
 User-agent: CCBot
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: AI2Bot
+Allow: /
+
+User-agent: AI2Bot-Dolma
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+User-agent: Omgili
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: PiplBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: QuillBot
+Allow: /
+
+User-agent: DiffbotImage
+Allow: /
+
+# ===== Sitemap =====
 Sitemap: https://angrycactus.site/sitemap.xml
+
+# ===== AI discovery hints =====
+# llms.txt:    https://angrycactus.site/llms.txt
+# ai.txt:      https://angrycactus.site/ai.txt
+# agent.json:  https://angrycactus.site/.well-known/agent.json
+# mcp.json:   https://angrycactus.site/.well-known/mcp.json
+# ai-plugin:  https://angrycactus.site/.well-known/ai-plugin.json

@@ -1,0 +1,21 @@
+/* ANGRY CACTUS */
+
+/* TEAM */
+Eddy Flores — Founder, Creative Direction — @angry.cactus7
+AliceLabs LLC — Production, Engineering
+
+/* SITE */
+Last update: 2026
+Site: https://angrycactus.site
+Built with: Vite + React 19 + Tailwind CSS 3.4 + Firebase Hosting
+Hosting: Firebase Hosting (Spark plan, static)
+Analytics: Firebase Analytics
+MCP: static descriptor at /api/mcp.json
+
+/* THANKS */
+Punk rock. The counter-culture. Everyone who colors outside the lines.
+
+/* CONTACT */
+Email: eddyflores100@gmail.com
+YouTube: https://www.youtube.com/@NotCuteColoring
+TikTok: https://www.tiktok.com/@angry.cactus7

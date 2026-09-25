@@ -4,21 +4,51 @@
   "url": "https://angrycactus.site",
   "mcp_endpoint": "https://angrycactus.site/api/mcp.json",
   "transport": "static_descriptor",
+  "llms_txt": "https://angrycactus.site/llms.txt",
+  "ai_txt": "https://angrycactus.site/ai.txt",
+  "organization": {
+    "legal_name": "AliceLabs LLC",
+    "location": "Sheridan, Wyoming, USA",
+    "founded": "2024",
+    "contact_email": "eddyflores100@gmail.com"
+  },
   "product": {
     "type": "digital_book",
     "category": "coloring_book_adults",
     "style": "punk_dark_urban_brutalist",
     "delivery": "instant_digital_download",
-    "platforms": ["Hotmart", "Amazon", "Gumroad"]
+    "platforms": ["Hotmart", "Amazon", "Gumroad"],
+    "free_samples": "https://angrycactus.site/cactus_free_samples.zip"
   },
   "affiliate": {
     "platform": "Hotmart",
     "commission_rate": "20%",
     "signup_url": "https://pay.hotmart.com/Q103956873J",
-    "cookie_days": 60
+    "cookie_days": 60,
+    "investment_required": 0
   },
-  "target_audience": "Adults 18-45 who like punk, dark, urban art. Coloring enthusiasts looking for non-cute alternatives.",
-  "market": "Global",
-  "tags": ["coloring book", "digital product", "punk", "art", "adult coloring", "instant download", "affiliate", "20% commission", "MCP"],
-  "mcp_tools": ["discover_opportunity", "get_product_info", "get_marketing_kit", "get_buy_links", "get_affiliate_info"]
+  "target_audience": {
+    "age_range": "18-45",
+    "interests": ["punk", "dark_art", "urban", "alternative", "counter_culture"],
+    "market": "Global",
+    "not_for": ["kids", "mandala_lovers", "cute_animal_fans"]
+  },
+  "categories": ["PUNK", "LETTERING", "SIGNALS"],
+  "languages": ["en"],
+  "regions": ["global"],
+  "tags": [
+    "coloring book", "digital product", "punk", "art", "adult coloring",
+    "instant download", "affiliate", "20% commission", "MCP", "AI discovery"
+  ],
+  "mcp_tools": [
+    "discover_opportunity",
+    "get_product_info",
+    "get_marketing_kit",
+    "get_buy_links",
+    "get_affiliate_info"
+  ],
+  "social": {
+    "youtube": "https://www.youtube.com/@NotCuteColoring",
+    "tiktok": "https://www.tiktok.com/@angry.cactus7"
+  }
 }

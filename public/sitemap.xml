@@ -1,8 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://angrycactus.site/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://angrycactus.site/api/mcp.json</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://angrycactus.site/.well-known/agent.json</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://angrycactus.site/.well-known/mcp.json</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://angrycactus.site/.well-known/ai-plugin.json</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://angrycactus.site/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angrycactus.site/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://angrycactus.site/" />
+    <image:image>
+      <image:loc>https://angrycactus.site/hero.jpg</image:loc>
+      <image:title>Angry Cactus — Punk adult coloring book</image:title>
+      <image:caption>Punk-rock adult coloring book cover</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Gallery section -->
+  <url>
+    <loc>https://angrycactus.site/#gallery</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Buy section -->
+  <url>
+    <loc>https://angrycactus.site/#buy</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- MCP descriptor (for AI crawlers) -->
+  <url>
+    <loc>https://angrycactus.site/api/mcp.json</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- AI discovery files -->
+  <url>
+    <loc>https://angrycactus.site/llms.txt</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://angrycactus.site/ai.txt</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://angrycactus.site/.well-known/agent.json</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://angrycactus.site/.well-known/mcp.json</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://angrycactus.site/.well-known/ai-plugin.json</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://angrycactus.site/.well-known/organization.json</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://angrycactus.site/.well-known/website.json</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://angrycactus.site/.well-known/faq.json</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Gallery images (for image search) -->
+  <url>
+    <loc>https://angrycactus.site/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://angrycactus.site/gallery_garden.png</image:loc>
+      <image:title>Garden Rebel — Punk coloring page</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://angrycactus.site/gallery_alley.jpg</image:loc>
+      <image:title>Alley Attack — Urban coloring page</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://angrycactus.site/gallery_theater.jpg</image:loc>
+      <image:title>Cinema Chaos — Lettering coloring page</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://angrycactus.site/gallery_phone.jpg</image:loc>
+      <image:title>Phone Booth — Signals coloring page</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://angrycactus.site/gallery_taxi.jpg</image:loc>
+      <image:title>Taxi Turmoil — Signals coloring page</image:title>
+    </image:image>
+  </url>
 </urlset>

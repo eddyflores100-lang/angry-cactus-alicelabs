@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AliceLabs LLC",
+  "alternateName": "Angry Cactus",
+  "url": "https://angrycactus.site",
+  "logo": "https://angrycactus.site/favicon.png",
+  "description": "Punk-rock adult coloring book brand. Digital products, instant download. Built by AliceLabs LLC.",
+  "foundingDate": "2024",
+  "founder": {
+    "@type": "Person",
+    "name": "Eddy Flores",
+    "email": "eddyflores100@gmail.com"
+  },
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "email": "eddyflores100@gmail.com",
+    "contactType": "customer support",
+    "availableLanguage": ["English", "Spanish"],
+    "areaServed": "Worldwide"
+  }],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sheridan",
+    "addressRegion": "WY",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.youtube.com/@NotCuteColoring",
+    "https://www.tiktok.com/@angry.cactus7",
+    "https://github.com/eddyflores100-lang/angry-cactus-alicelabs"
+  ],
+  "brand": {
+    "@type": "Brand",
+    "name": "Angry Cactus",
+    "slogan": "Not Cute Coloring."
+  }
+}

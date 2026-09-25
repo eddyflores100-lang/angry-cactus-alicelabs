@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Angry Cactus",
+  "alternateName": "Angry Cactus — Not Cute Coloring",
+  "url": "https://angrycactus.site/",
+  "description": "Punk-rock adult coloring book. Digital download. Brutal. Urban. Not for kids.",
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Organization",
+    "name": "AliceLabs LLC",
+    "url": "https://angrycactus.site"
+  },
+  "potentialAction": [{
+    "@type": "SearchAction",
+    "target": "https://angrycactus.site/#gallery?q={query}",
+    "query-input": "required name=query"
+  }]
+}
