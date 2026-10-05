@@ -54,3 +54,9 @@
     animation: none;
   }
 }
+
+/* Keep anchor destinations clear of fixed navigation and preserve keyboard focus. */
+section[id] { scroll-margin-top: 110px; }
+:where(a,button,input,textarea,select):focus-visible { outline:3px solid #c21a1a; outline-offset:4px; }
+dialog::backdrop { background:rgba(0,0,0,.85); }
+@media(max-width:767px) { body { padding-bottom:85px; } }

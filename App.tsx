@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import '@fontsource/anton/400.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/700.css';
+import '@fontsource/inter/900.css';
 import './styles.css';
 
-// Firebase Analytics initialization (auto-loads in browser).
-import './src/lib/firebase';
+// Analytics is not initialized until an explicit measurement setup is agreed.
 
 import { Navbar } from './src/components/Navbar';
 import { Hero, WhyThisExists, MobileCTA, WhatYouGet, MarqueeBanner, TryBeforeYouStrike, FinalCTA } from './src/components/sections';

@@ -1,16 +1,17 @@
 import React from 'react';
 
+const scrollToSamples = () => document.getElementById('samples')?.scrollIntoView({behavior:'smooth'});
 const scrollToBuy = () =>
   document.getElementById('buy')?.scrollIntoView({ behavior: 'smooth' });
 
 export const Hero: React.FC = () => (
-  <section className="h-[100svh] md:h-auto pt-20 md:pt-32 pb-12 md:pb-20 px-4 md:px-16 flex flex-col md:flex-row gap-8 md:gap-12 border-b-4 md:border-b-8 border-black dark:border-white justify-center items-center overflow-hidden">
+  <section className="min-h-[100svh] md:min-h-0 pt-20 md:pt-32 pb-12 md:pb-20 px-4 md:px-16 flex flex-col md:flex-row gap-8 md:gap-12 border-b-4 md:border-b-8 border-black dark:border-white justify-center items-center overflow-hidden">
     <div className="flex-1 flex flex-col justify-center text-center md:text-left h-full md:h-auto">
       <div className="bg-primary text-white inline-block px-3 py-1 md:px-4 md:py-2 font-black uppercase text-[10px] md:text-sm mb-4 md:mb-6 tracking-widest self-center md:self-start">
         WARNING: ADULTS ONLY
       </div>
 
-      <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] leading-[0.85] uppercase mb-6 md:mb-8 text-black dark:text-white">
+      <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-[7rem] leading-[0.85] uppercase mb-6 md:mb-8 text-black dark:text-white">
         NOT CUTE <br /> <span className="text-primary italic">COLORING PAGES</span>
       </h1>
 
@@ -18,16 +19,16 @@ export const Hero: React.FC = () => (
         Punk. Dark. Urban coloring for adults.
       </p>
 
-      <div className="flex flex-col sm:flex-row gap-4 md:gap-6 w-full max-w-md mx-auto md:mx-0">
+      <div className="flex flex-col sm:flex-row gap-4 md:gap-6 w-full max-w-xl mx-auto md:mx-0">
         <button
-          onClick={scrollToBuy}
-          className="bg-primary text-white font-display text-3xl md:text-4xl py-4 md:py-5 px-8 md:px-16 border-4 border-black dark:border-white hover:scale-105 active:scale-95 transition-all uppercase brutalist-shadow"
+          onClick={scrollToSamples}
+          className="bg-primary text-white font-display text-2xl md:text-3xl py-4 md:py-5 px-6 md:px-6 border-4 border-black dark:border-white hover:scale-105 active:scale-95 transition-all uppercase brutalist-shadow"
         >
           GET FREE PAGES
         </button>
         <button
           onClick={scrollToBuy}
-          className="bg-black dark:bg-white text-white dark:text-black font-display text-3xl md:text-4xl py-4 md:py-5 px-8 md:px-16 border-4 border-primary brutalist-shadow hover:scale-105 active:scale-95 transition-all uppercase"
+          className="bg-black dark:bg-white text-white dark:text-black font-display text-2xl md:text-3xl py-4 md:py-5 px-6 md:px-6 border-4 border-primary brutalist-shadow hover:scale-105 active:scale-95 transition-all uppercase"
         >
           BUY THE BOOK
         </button>
@@ -103,7 +104,7 @@ export const MobileCTA: React.FC = () => (
     <h2 className="font-display text-4xl uppercase mb-4">TRY BEFORE YOU STRIKE</h2>
     <p className="font-black text-lg uppercase mb-8 opacity-90">Download free pages. Print. Color. Decide.</p>
     <button
-      onClick={scrollToBuy}
+      onClick={scrollToSamples}
       className="w-full bg-black text-white py-4 font-display text-2xl uppercase border-4 border-white"
     >
       DOWNLOAD NOW
@@ -188,7 +189,7 @@ export const MarqueeBanner: React.FC = () => (
 );
 
 export const TryBeforeYouStrike: React.FC = () => (
-  <section className="py-20 md:py-40 px-4 md:px-16 bg-zinc-100 dark:bg-zinc-900 border-b-8 border-black dark:border-white text-center relative overflow-hidden">
+  <section id="samples" className="py-20 md:py-40 px-4 md:px-16 bg-zinc-100 dark:bg-zinc-900 border-b-8 border-black dark:border-white text-center relative overflow-hidden">
     <div className="max-w-5xl mx-auto relative z-10">
       <h2 className="font-display text-7xl md:text-[11rem] uppercase mb-8 leading-none">
         TRY BEFORE <br /> <span className="text-primary italic">YOU STRIKE</span>
@@ -211,7 +212,7 @@ export const TryBeforeYouStrike: React.FC = () => (
         DOWNLOAD FREE PAGES
       </a>
       <p className="mt-8 font-black uppercase text-sm tracking-[0.3em] text-zinc-400">
-        No email tricks. No payment. No bullshit.
+        3 image files (PNG/JPG) in a ZIP. No email or payment required.
       </p>
     </div>
     <div className="absolute top-0 left-0 w-full h-full text-[35rem] font-display text-black/5 dark:text-white/5 pointer-events-none select-none flex items-center justify-center">

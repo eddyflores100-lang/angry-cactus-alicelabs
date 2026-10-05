@@ -42,6 +42,10 @@ export const Gallery: React.FC = () => {
         {(showMoreGallery ? filteredItems : filteredItems.slice(0, 4)).map((item) => (
           <div
             key={item.id}
+            role="button"
+            tabIndex={0}
+            aria-label={`Preview ${item.title}`}
+            onKeyDown={e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();setSelected(item)}}}
             onClick={() => setSelected(item)}
             className="group cursor-pointer bg-white dark:bg-zinc-800 border-4 border-black dark:border-white p-4 hover:-rotate-1 hover:scale-[1.02] transition-all brutalist-shadow active:shadow-none active:translate-x-1 active:translate-y-1"
           >
@@ -63,7 +67,7 @@ export const Gallery: React.FC = () => {
         ))}
       </div>
 
-      <div className="md:hidden mt-12 text-center">
+      <div className="mt-12 text-center">
         <button
           onClick={() => setShowMoreGallery(!showMoreGallery)}
           className="px-10 py-4 bg-black text-white dark:bg-white dark:text-black font-display text-2xl uppercase border-4 border-primary brutalist-shadow"
