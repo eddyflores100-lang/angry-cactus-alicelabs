@@ -1,5 +1,6 @@
+import {Icon} from './Icon';
 import React from 'react';
-import { GUMROAD_LINK } from '../data/links';
+export { ContactModal } from './ContactModal';
 
 interface FooterProps {
   onOpenLab: () => void;
@@ -86,7 +87,7 @@ export const LabModal: React.FC<LabModalProps> = ({ open, onClose }) => {
           className="absolute top-4 right-4 text-black dark:text-white hover:rotate-90 transition-transform cursor-pointer"
           aria-label="Close"
         >
-          <span className="material-icons text-4xl">close</span>
+          <Icon name="close" className="text-4xl"/>
         </button>
         <div className="text-center mb-16">
           <h2 className="font-display text-5xl md:text-7xl uppercase mb-4 text-black dark:text-white">The Lab</h2>
@@ -153,7 +154,7 @@ export const WholesaleModal: React.FC<WholesaleModalProps> = ({ open, onClose, o
           className="absolute top-4 right-4 text-black dark:text-white hover:rotate-90 transition-transform cursor-pointer"
           aria-label="Close"
         >
-          <span className="material-icons text-4xl">close</span>
+          <Icon name="close" className="text-4xl"/>
         </button>
         <div className="mb-12">
           <h2 className="font-display text-5xl md:text-7xl uppercase mb-4 text-black dark:text-white">Wholesale</h2>
@@ -172,12 +173,12 @@ export const WholesaleModal: React.FC<WholesaleModalProps> = ({ open, onClose, o
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 font-black uppercase tracking-tight">
             <div className="border-2 border-black dark:border-white p-4">
-              <span className="text-primary block text-4xl mb-2">30%</span>
-              <span>Maximum Discount</span>
+              <span className="text-primary block text-4xl mb-2">By quote</span>
+              <span>Volume pricing</span>
             </div>
             <div className="border-2 border-black dark:border-white p-4">
-              <span className="text-primary block text-4xl mb-2">24h</span>
-              <span>Global Dispatch</span>
+              <span className="text-primary block text-4xl mb-2">Agreed</span>
+              <span>Dispatch schedule</span>
             </div>
           </div>
           <button
@@ -187,104 +188,8 @@ export const WholesaleModal: React.FC<WholesaleModalProps> = ({ open, onClose, o
             Apply for Wholesale
           </button>
 
-          <div className="pt-8 border-t-2 border-dashed border-zinc-200 dark:border-zinc-800">
-            <p className="font-black text-[10px] uppercase tracking-widest text-zinc-400 mb-3 text-center">
-              Join the digital hustle
-            </p>
-            <a
-              href={`${GUMROAD_LINK}/affiliates`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex flex-col items-center gap-1 p-4 border-4 border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all brutalist-shadow"
-            >
-              <span className="font-display text-2xl md:text-3xl uppercase tracking-tighter">Affiliate Program</span>
-              <span className="font-black text-[10px] md:text-xs uppercase opacity-60 group-hover:opacity-100">
-                Market the Art &bull; Earn Commissions &bull; Spread the Chaos
-              </span>
-            </a>
-          </div>
+          <p className="text-sm">Availability, quantities and delivery dates are confirmed in the proposal. Affiliate arrangements must be confirmed with the marketplace; no fixed commission is promised here.</p>
         </div>
-      </div>
-    </div>
-  );
-};
-
-interface ContactModalProps {
-  open: boolean;
-  onClose: () => void;
-}
-
-export const ContactModal: React.FC<ContactModalProps> = ({ open, onClose }) => {
-  if (!open) return null;
-  return (
-    <div className="fixed inset-0 bg-black/95 z-[500] flex items-center justify-center p-4 md:p-10 overflow-y-auto">
-      <div className="max-w-2xl w-full bg-white dark:bg-zinc-900 border-[10px] border-black dark:border-white p-6 md:p-12 relative animate-in slide-in-from-bottom duration-300">
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 text-black dark:text-white hover:rotate-90 transition-transform cursor-pointer"
-          aria-label="Close"
-        >
-          <span className="material-icons text-4xl">close</span>
-        </button>
-        <div className="mb-10">
-          <h2 className="font-display text-5xl md:text-7xl uppercase mb-4 text-black dark:text-white">Contact</h2>
-          <div className="font-black text-primary uppercase tracking-[0.1em] text-sm">
-            Direct line to the lab. Speak your truth.
-          </div>
-        </div>
-        <form
-          className="space-y-6"
-          onSubmit={(e) => {
-            e.preventDefault();
-            alert('TRANSMISSION SENT TO THE LAB.');
-            onClose();
-          }}
-        >
-          <div>
-            <label className="block font-black uppercase text-xs mb-2 text-zinc-500">Identity / Name</label>
-            <input
-              required
-              type="text"
-              className="w-full bg-zinc-100 dark:bg-zinc-800 border-2 border-black dark:border-white p-4 font-black focus:border-primary outline-none"
-              placeholder="REBEL #123"
-            />
-          </div>
-          <div>
-            <label className="block font-black uppercase text-xs mb-2 text-zinc-500">
-              Digital Address (Email)
-            </label>
-            <input
-              required
-              type="email"
-              className="w-full bg-zinc-100 dark:bg-zinc-800 border-2 border-black dark:border-white p-4 font-black focus:border-primary outline-none"
-              placeholder="ALIEN@ALICELABS.AI"
-            />
-          </div>
-          <div>
-            <label className="block font-black uppercase text-xs mb-2 text-zinc-500">Transmission Type</label>
-            <select className="w-full bg-zinc-100 dark:bg-zinc-800 border-2 border-black dark:border-white p-4 font-black focus:border-primary outline-none appearance-none">
-              <option>General Inquiry</option>
-              <option>Wholesale Application</option>
-              <option>Tech Collaboration</option>
-              <option>Bug Report / Glitch</option>
-            </select>
-          </div>
-          <div>
-            <label className="block font-black uppercase text-xs mb-2 text-zinc-500">Message / Manifest</label>
-            <textarea
-              required
-              rows={4}
-              className="w-full bg-zinc-100 dark:bg-zinc-800 border-2 border-black dark:border-white p-4 font-black focus:border-primary outline-none resize-none"
-              placeholder="WHAT'S ON YOUR MIND?"
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-black dark:bg-white text-white dark:text-black py-6 font-display text-4xl uppercase border-4 border-primary brutalist-shadow hover:bg-primary hover:text-white transition-all cursor-pointer"
-          >
-            Send Transmission
-          </button>
-        </form>
       </div>
     </div>
   );
@@ -298,12 +203,12 @@ export const FloatingButtons: React.FC = () => (
       title="Toggle Reality"
       aria-label="Toggle dark mode"
     >
-      <span className="material-icons text-2xl md:text-3xl">contrast</span>
+      <Icon name="contrast" className="text-2xl md:text-3xl"/>
     </button>
 
     <div className="md:hidden fixed bottom-0 left-0 w-full p-4 bg-white/10 backdrop-blur-sm z-[400] border-t-2 border-primary/20">
       <button
-        onClick={() => document.getElementById('buy')?.scrollIntoView({ behavior: 'smooth' })}
+        onClick={() => document.getElementById('samples')?.scrollIntoView({ behavior: 'smooth' })}
         className="w-full bg-primary text-white font-display text-xl py-3 border-4 border-black brutalist-shadow uppercase active:translate-y-1 transition-all cursor-pointer"
       >
         GET FREE PAGES

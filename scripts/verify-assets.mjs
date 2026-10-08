@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {readFileSync,existsSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+const config=JSON.parse(readFileSync('firebase.json','utf8'));
+assert.equal(config.hosting.public,'dist');
+assert(!config.hosting.ignore.includes('**/*.zip'),'Hosting must publish the advertised sample ZIP');
+assert(!config.hosting.ignore.includes('**/.*'),'Hosting must publish the linked .well-known metadata');
+for(const path of ['dist/index.html','dist/cactus_free_samples.zip','dist/product.json','dist/.well-known/agent.json'])assert(existsSync(path),`Missing public artifact ${path}`);
+execFileSync('python3',['-c',"import zipfile; z=zipfile.ZipFile('dist/cactus_free_samples.zip'); assert z.testzip() is None; assert len(z.namelist())==3; assert all(n.endswith(('.png','.jpg')) for n in z.namelist())"]);
+const product=JSON.parse(readFileSync('dist/product.json','utf8'));for(const link of Object.values(product.purchase_links))assert.equal(new URL(link).protocol,'https:');
+console.log('PASS: publishable sample ZIP, 3 valid images, metadata and HTTPS purchase destinations');

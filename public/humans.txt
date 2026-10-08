@@ -9,8 +9,8 @@ Last update: 2026
 Site: https://angrycactus.site
 Built with: Vite + React 19 + Tailwind CSS 3.4 + Firebase Hosting
 Hosting: Firebase Hosting (Spark plan, static)
-Analytics: Firebase Analytics
-MCP: static descriptor at /api/mcp.json
+Analytics: not initialized by the frontend
+Product metadata: /product.json (no executable MCP server)
 
 /* THANKS */
 Punk rock. The counter-culture. Everyone who colors outside the lines.

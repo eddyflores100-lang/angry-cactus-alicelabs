@@ -1,24 +1,8 @@
 {
-  "name": "angry-cactus",
-  "version": "1.0.0",
-  "description": "Punk-rock adult coloring book. 20% commission. Digital product. MCP server descriptor with 5 tools: discover, product info, marketing kit, buy links, affiliate info.",
-  "endpoint": "https://angrycactus.site/api/mcp.json",
-  "transport": "static_descriptor",
-  "protocol": "MCP 2024-11-05",
-  "auth": "none",
-  "tools": [
-    "discover_opportunity",
-    "get_product_info",
-    "get_marketing_kit",
-    "get_buy_links",
-    "get_affiliate_info"
-  ],
-  "business": {
-    "type": "digital_product",
-    "commission_rate": "20%",
-    "product": "Adult coloring book (punk/dark/urban)",
-    "delivery": "instant digital download",
-    "market": "Global",
-    "investment_required": 0
-  }
+  "name": "Angry Cactus",
+  "type": "static_product_information",
+  "mcp_available": false,
+  "tools": [],
+  "catalog_url": "https://angrycactus.site/product.json",
+  "message": "Static metadata is not an executable MCP server. No commissions or earnings are guaranteed."
 }

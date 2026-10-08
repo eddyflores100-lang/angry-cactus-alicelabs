@@ -1,3 +1,4 @@
+import {Icon} from './Icon';
 import React, { useState } from 'react';
 import { GUMROAD_LINK, HOTMART_LINK, AMAZON_LINK } from '../data/links';
 
@@ -12,7 +13,7 @@ interface BuyCardProps {
 const BuyCard: React.FC<BuyCardProps> = ({ icon, title, description, cta, href }) => (
   <div className="border-8 md:border-[12px] border-black dark:border-white p-4 bg-white dark:bg-black brutalist-shadow group hover:-translate-y-2 transition-transform h-full">
     <div className="p-8 md:p-10 border-4 border-dashed border-zinc-400 flex flex-col items-center h-full text-center">
-      <span className="material-icons text-6xl text-primary mb-6">{icon}</span>
+      <Icon name={icon} className="text-6xl text-primary mb-6"/>
       <p className="font-black uppercase text-2xl md:text-3xl mb-2 tracking-tighter">{title}</p>
       <p className="font-bold text-zinc-500 text-lg mb-8 normal-case leading-relaxed">{description}</p>
       <a
@@ -30,7 +31,7 @@ const BuyCard: React.FC<BuyCardProps> = ({ icon, title, description, cta, href }
 const MobileBuyCard: React.FC<BuyCardProps> = ({ icon, title, description, cta, href }) => (
   <div className="border-4 border-black dark:border-white p-4 bg-white dark:bg-black shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] dark:shadow-[10px_10px_0px_0px_#ff1e1e]">
     <div className="p-8 border-2 border-dashed border-zinc-700 flex flex-col items-center text-center">
-      <span className="material-icons text-6xl text-primary mb-4">{icon}</span>
+      <Icon name={icon} className="text-6xl text-primary mb-4"/>
       <p className="font-black uppercase text-3xl mb-2">{title}</p>
       <p className="font-bold text-zinc-500 text-sm mb-8">{description}</p>
       <a
@@ -62,26 +63,27 @@ export const ChooseYourWeapon: React.FC = () => (
       CHOOSE YOUR <br /> <span className="text-primary italic">WEAPON</span>
     </h2>
 
+    <p className="max-w-3xl mx-auto mb-12 px-4 text-base font-semibold relative z-10">Choose a printed book or a digital edition. Purchases open on the selected marketplace in a new tab. Confirm the final price, currency, included files and delivery terms there before paying.</p>
     {/* Desktop */}
     <div className="max-w-7xl mx-auto md:grid grid-cols-3 gap-8 md:gap-8 relative z-10 px-4 pb-20 border-b-8 border-black/10 dark:border-white/10 hidden">
       <BuyCard
         icon="menu_book"
         title="PHYSICAL BOOK"
-        description="Premium print. Heavy ink. Real damage."
+        description="Printed edition. Check stock, price and shipping on Amazon."
         cta="BUY ON AMAZON"
         href={AMAZON_LINK}
       />
       <BuyCard
         icon="payments"
-        title="DIGITAL (PAYPAL)"
-        description="Instant access. Secured by Hotmart."
+        title="DIGITAL · HOTMART"
+        description="Digital edition. Confirm format and delivery at checkout."
         cta="BUY ON HOTMART"
         href={HOTMART_LINK}
       />
       <BuyCard
         icon="download"
-        title="DIGITAL (STRIPE)"
-        description="Direct download. Print anywhere."
+        title="DIGITAL · GUMROAD"
+        description="Digital edition. Check the included files and license."
         cta="BUY ON GUMROAD"
         href={GUMROAD_LINK}
       />
@@ -92,21 +94,21 @@ export const ChooseYourWeapon: React.FC = () => (
       <MobileBuyCard
         icon="menu_book"
         title="PHYSICAL BOOK"
-        description="Premium print edition."
+        description="Printed edition. Confirm price and delivery on Amazon."
         cta="BUY ON AMAZON"
         href={AMAZON_LINK}
       />
       <MobileBuyCard
         icon="payments"
         title="HOTMART (DIGITAL)"
-        description="Pay with PayPal or Card."
+        description="Check available payment methods at checkout."
         cta="BUY HOTMART"
         href={HOTMART_LINK}
       />
       <MobileBuyCard
         icon="download"
         title="GUMROAD (DIGITAL)"
-        description="Instant download."
+        description="Check file format and delivery at checkout."
         cta="BUY GUMROAD"
         href={GUMROAD_LINK}
       />
@@ -139,12 +141,10 @@ export const NotForEveryone: React.FC = () => {
           <br className="md:hidden" /> FOR EVERYONE. <br className="hidden md:block" />
           <span className="text-primary italic">THIS IS NOT FOR KIDS.</span>
         </h2>
-        <span
-          className="material-icons md:hidden transform transition-transform duration-300"
+        <Icon name="expand_more"
+          className="md:hidden transform transition-transform duration-300"
           style={{ transform: isOpen ? 'rotate(180deg)' : 'rotate(0)' }}
-        >
-          expand_more
-        </span>
+        />
       </button>
 
       <div

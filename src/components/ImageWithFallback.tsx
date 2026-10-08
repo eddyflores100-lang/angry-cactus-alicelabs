@@ -1,3 +1,4 @@
+import {Icon} from './Icon';
 import React, { useState } from 'react';
 
 interface ImageWithFallbackProps {
@@ -20,7 +21,7 @@ export const ImageWithFallback: React.FC<ImageWithFallbackProps> = ({
     >
       {error ? (
         <div className="flex flex-col items-center justify-center text-center p-4">
-          <span className="material-icons text-6xl mb-2 opacity-20">warning_amber</span>
+          <Icon name="warning_amber" className="text-6xl mb-2 opacity-20"/>
           <p className="font-display text-2xl uppercase opacity-40">SIGNAL LOST</p>
         </div>
       ) : (
